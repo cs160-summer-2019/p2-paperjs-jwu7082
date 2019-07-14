@@ -435,10 +435,12 @@
 	<!-- Trying to make audio work on mobile chrome 
 	https://stackoverflow.com/questions/12587977/html5-audio-chrome-on-android-doesnt-automatically-play-song-vs-chrome-on-pc-d --> 
 	<script>
-    createjs.Sound.registerSound("../static/coloring/vendors/stream.mp3", "x");
-    setTimeout(function () {
+        createjs.Sound.registerSound("../static/coloring/vendors/stream.mp3", "x");
+
         createjs.Sound.play("x");
-    }, 0)
+    //    setTimeout(function () {
+    //        createjs.Sound.play("x");
+    //    }, 10000)
     </script>
 
 <!--	<audio id="audio" src="../static/coloring/vendors/stream.mp3" autoplay loop controls></audio>-->
