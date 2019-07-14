@@ -26,6 +26,10 @@
             padding: 0;
         }
         
+        #audio {
+            display: none;
+        }
+        
         #color-palette {
             z-index: 2;
             width: 15%;
@@ -426,6 +430,6 @@
     </canvas>
     <canvas id="myCanvas" width="770px" height="770px"></canvas>
 	<div id="color-palette"></div>
-	<audio src="../static/coloring/vendors/stream.mp3" autoplay loop controls></audio>
+	<audio id="audio" src="../static/coloring/vendors/stream.mp3" autoplay loop controls></audio>
 </body>
 </html>
