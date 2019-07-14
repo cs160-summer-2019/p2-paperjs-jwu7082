@@ -430,10 +430,9 @@
 	https://stackoverflow.com/questions/12587977/html5-audio-chrome-on-android-doesnt-automatically-play-song-vs-chrome-on-pc-d --> 
 	<script>
         createjs.Sound.registerSound("../static/coloring/vendors/stream.mp3", "x");
-        createjs.Sound.play("x");
-    //    setTimeout(function () {
-    //        createjs.Sound.play("x");
-    //    }, 10000)
+        setTimeout(function () {
+            createjs.Sound.play("x");
+        }, 10000)
     </script>
 </head>
 
