@@ -425,23 +425,23 @@
        //     });
         }
     </script>
-</head>
-<body>
-    <canvas id="meter" width="1200px" height="1200px">
-    </canvas>
-    <canvas id="myCanvas" width="770px" height="770px"></canvas>
-	<div id="color-palette"></div>
-	
-	<!-- Trying to make audio work on mobile chrome 
+    
+    <!-- Trying to make audio work on mobile chrome 
 	https://stackoverflow.com/questions/12587977/html5-audio-chrome-on-android-doesnt-automatically-play-song-vs-chrome-on-pc-d --> 
 	<script>
         createjs.Sound.registerSound("../static/coloring/vendors/stream.mp3", "x");
-
         createjs.Sound.play("x");
     //    setTimeout(function () {
     //        createjs.Sound.play("x");
     //    }, 10000)
     </script>
+</head>
+
+<body>
+    <canvas id="meter" width="1200px" height="1200px">
+    </canvas>
+    <canvas id="myCanvas" width="770px" height="770px"></canvas>
+	<div id="color-palette"></div>
 
 <!--	<audio id="audio" src="../static/coloring/vendors/stream.mp3" autoplay loop controls></audio>-->
 </body>
