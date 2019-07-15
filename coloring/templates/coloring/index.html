@@ -71,6 +71,7 @@
     </style>
     
     <script type="text/javascript" canvas="canvas">
+        // ORIGINAL CODE SOURCE (unmodified): https://codepen.io/mrbizle/pen/djVjaR 
          /**
          * jQuery Ripples plugin v0.6.2 / https://github.com/sirxemic/jquery.ripples
          * MIT License
@@ -227,9 +228,8 @@
 					var keys = Object.keys(colors);
 					for (var i = keys.length - 1; i >= 0; i--) {
                         //		cp.options.push(colors[keys[i]][500]);
-
                         // ADDED
-                        cp.options.push(colors[keys[i]][300]);
+                        cp.options.push(colors[keys[i]][100]);
                         cp.options.push(colors[keys[i]][500]);
                         cp.options.push(colors[keys[i]][900]);
 					}
@@ -261,14 +261,15 @@
 			}
             
             /* ==================================== WATERCOLOR ==================================== */
+            // CODE SOURCE (unmodified): https://codepen.io/shshaw/pen/zPxMgd
          //   $(document).ready(function() {
                 var twoPI = 2 * Math.PI; 
                 var watercolorCanvas = document.createElement('canvas'),
                     ctx = watercolorCanvas.getContext('2d');
 
                 watercolorCanvas.id = "watercolor-canvas"; // ADDED     
-          watercolorCanvas.width = "1200px";
-          watercolorCanvas.height = "1200px";
+                watercolorCanvas.width = "1200px";
+                watercolorCanvas.height = "1200px";
 
                 var width = watercolorCanvas.width = window.innerWidth,
                     height = watercolorCanvas.height = window.innerHeight;
